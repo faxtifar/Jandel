@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow a Garden by Faxtifar</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%);
+        }
+        .feature-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .stats-number {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm border-b border-gray-800 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-green-400 to-emerald-500 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">🌱</span>
+                    </div>
+                    <span class="text-xl font-bold">Grow a Garden</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors">Features</a>
+                    <a href="#gallery" class="text-gray-300 hover:text-white transition-colors">Gallery</a>
+                    <a href="#stats" class="text-gray-300 hover:text-white transition-colors">Success</a>
+                    <a href="#play" class="bg-gradient-to-r from-green-500 to-emerald-600 px-6 py-2 rounded-full font-semibold hover:from-green-600 hover:to-emerald-700 transition-all transform hover:scale-105">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="absolute inset-0" style="background-image: url('https://public.youware.com/users-website-assets/prod/4d6800a2-4db7-4209-9603-5185f1dfb0e9/ba0b9663d5ee468eb5d58ef50eda8350.png'); background-size: cover; background-position: center; opacity: 0.3;"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-left">
+                    <div class="inline-flex items-center bg-green-500/20 text-green-300 px-4 py-2 rounded-full text-sm mb-6">
+                        🏆 Record-Breaking Roblox Game
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                        <span class="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 bg-clip-text text-transparent">
+                            Grow a Garden
+                        </span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed">
+                        The surprise gaming phenomenon that broke Fortnite's concurrent player record. 
+                        Plant, grow, and harvest your way to virtual gardening bliss in the most relaxing game on Roblox.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#play" class="inline-flex items-center justify-center bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-2xl">
+                            🎮 Play on Roblox
+                        </a>
+                        <a href="#features" class="inline-flex items-center justify-center border-2 border-white/30 hover:border-white/50 px-8 py-4 rounded-full text-lg font-semibold transition-all backdrop-blur-sm">
+                            🌱 Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-1 border border-white/20">
+                        <img src="https://public.youware.com/users-website-assets/prod/4d6800a2-4db7-4209-9603-5185f1dfb0e9/e675158f687b4248a49f915d5cf00871.jpeg" alt="Grow a Garden Gameplay" class="w-full rounded-xl shadow-2xl">
+                    </div>
+                    <div class="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-orange-500 p-3 rounded-full animate-bounce">
+                        <span class="text-2xl">🏆</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4">Breaking Records</h2>
+                <p class="text-xl text-gray-400">The numbers speak for themselves</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center p-8 feature-card rounded-2xl">
+                    <div class="stats-number text-4xl lg:text-5xl font-bold mb-2">16M+</div>
+                    <p class="text-gray-300 text-lg">Concurrent Players</p>
+                    <p class="text-sm text-gray-500 mt-2">Beat Fortnite's record</p>
+                </div>
+                <div class="text-center p-8 feature-card rounded-2xl">
+                    <div class="stats-number text-4xl lg:text-5xl font-bold mb-2">9B+</div>
+                    <p class="text-gray-300 text-lg">Total Visits</p>
+                    <p class="text-sm text-gray-500 mt-2">Since March 2025</p>
+                </div>
+                <div class="text-center p-8 feature-card rounded-2xl">
+                    <div class="stats-number text-4xl lg:text-5xl font-bold mb-2">35%</div>
+                    <p class="text-gray-300 text-lg">Under 13 Players</p>
+                    <p class="text-sm text-gray-500 mt-2">Kid-friendly fun</p>
+                </div>
+                <div class="text-center p-8 feature-card rounded-2xl">
+                    <div class="stats-number text-4xl lg:text-5xl font-bold mb-2">#1</div>
+                    <p class="text-gray-300 text-lg">Roblox Game</p>
+                    <p class="text-sm text-gray-500 mt-2">Current trending</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4">Why Players Love It</h2>
+                <p class="text-xl text-gray-400">Discover what makes this game so addictive</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="feature-card p-8 rounded-2xl text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl group-hover:rotate-12 transition-transform">
+                        🌱
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Relaxing Gameplay</h3>
+                    <p class="text-gray-400 leading-relaxed">Unlike fast-paced action games, Grow a Garden offers a peaceful, meditative experience. Plant seeds, watch them grow, and enjoy the zen of virtual gardening.</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl group-hover:rotate-12 transition-transform">
+                        ⏰
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Grows When Offline</h3>
+                    <p class="text-gray-400 leading-relaxed">Your garden continues to grow even when you're not playing! Return to find your crops ready for harvest, making progress feel rewarding and continuous.</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl group-hover:rotate-12 transition-transform">
+                        🏆
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Competitive Elements</h3>
+                    <p class="text-gray-400 leading-relaxed">Compete with friends for the best plants, most Sheckles (in-game currency), and rarest items. You can even steal from other players' gardens!</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl group-hover:rotate-12 transition-transform">
+                        💰
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Economy & Trading</h3>
+                    <p class="text-gray-400 leading-relaxed">Rare items like mutated candy blossom trees and dragonflies can be worth hundreds of pounds on eBay. Build your virtual wealth!</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-gradient-to-r from-red-400 to-rose-500 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl group-hover:rotate-12 transition-transform">
+                        👥
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Social Features</h3>
+                    <p class="text-gray-400 leading-relaxed">Play with friends, visit their gardens, and show off your best crops. The social aspect keeps players coming back for more.</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl group-hover:rotate-12 transition-transform">
+                        🆓
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Free to Play</h3>
+                    <p class="text-gray-400 leading-relaxed">Start playing immediately for free! Optional Robux purchases can speed up gameplay, but the core experience is completely accessible to everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4">See It In Action</h2>
+                <p class="text-xl text-gray-400">Beautiful gardens created by our community</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://public.youware.com/users-website-assets/prod/4d6800a2-4db7-4209-9603-5185f1dfb0e9/2499b712fd9e473a8c8a195ac9844b19.jpg" alt="Beautiful Garden Layout" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Stunning Garden Layouts</h3>
+                            <p class="text-sm text-gray-300">Create your perfect virtual space</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://public.youware.com/users-website-assets/prod/4d6800a2-4db7-4209-9603-5185f1dfb0e9/6998dd065c78476f9960786561ef2279.jpg" alt="Multiple Players Gaming" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Millions Playing Together</h3>
+                            <p class="text-sm text-gray-300">Join the global community</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl md:col-span-2">
+                    <img src="https://public.youware.com/users-website-assets/prod/4d6800a2-4db7-4209-9603-5185f1dfb0e9/946928ac32474db393e224e47bc6d520.jpg" alt="Crop Varieties" class="w-full h-64 object-cover transition-transform group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Endless Crop Varieties</h3>
+                            <p class="text-sm text-gray-300">From sugar apples to carrots - discover them all!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4">What Players Say</h2>
+                <p class="text-xl text-gray-400">Real feedback from our community</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-lg font-bold mr-4">E</div>
+                        <div>
+                            <h4 class="font-bold">Eric, Age 8</h4>
+                            <p class="text-sm text-gray-400">Edinburgh Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"It's a really fun game! There's a bit of patience to it. We can do competitions with each other - like, who's got the most Sheckles, who's got the best plant."</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full flex items-center justify-center text-lg font-bold mr-4">O</div>
+                        <div>
+                            <h4 class="font-bold">Owen, Age 10</h4>
+                            <p class="text-sm text-gray-400">Edinburgh Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"I like gardening - and gardening in Grow a Garden. Could there be a sugar apple - which is the best plant you can get? Or will there be a carrot, which is the worst?"</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center text-lg font-bold mr-4">BBC</div>
+                        <div>
+                            <h4 class="font-bold">BBC News</h4>
+                            <p class="text-sm text-gray-400">Technology Report</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"One of the world's most popular new titles... smashed a record for concurrent players set by the somewhat more adrenalin-filled Fortnite."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="play" class="py-20 hero-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl lg:text-6xl font-bold mb-6">Ready to Start Growing?</h2>
+            <p class="text-xl lg:text-2xl text-gray-300 mb-8">Join millions of players in the most relaxing game on Roblox</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.roblox.com" target="_blank" class="inline-flex items-center justify-center bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 px-12 py-5 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-2xl">
+                    🎮 Play on Roblox Now
+                </a>
+                <a href="https://www.roblox.com" target="_blank" class="inline-flex items-center justify-center border-2 border-white/30 hover:border-white/50 px-12 py-5 rounded-full text-xl font-semibold transition-all backdrop-blur-sm">
+                    📱 Get Roblox Mobile
+                </a>
+            </div>
+            <p class="text-sm text-gray-400 mt-6">Free to play • Available on all platforms • Join the record-breaking community</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-green-400 to-emerald-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">🌱</span>
+                        </div>
+                        <span class="text-xl font-bold">Grow a Garden</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">The record-breaking Roblox game that's changing how people think about gaming. Relaxing, social, and endlessly engaging.</p>
+                    <p class="text-sm text-gray-500">Developed by Splitting Point Studios • Available on Roblox</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://www.roblox.com" class="hover:text-white transition-colors">Play Now</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="#stats" class="hover:text-white transition-colors">Statistics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Community</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        
+                        <li><a href="https://discord.gg/jdrCkucu" class="hover:text-white transition-colors">Discord</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Reddit</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Grow a Garden • This is a fan-made promotional website • Game available on Roblox</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-gray-900');
+                navbar.classList.remove('bg-gray-900/90');
+            } else {
+                navbar.classList.add('bg-gray-900/90');
+                navbar.classList.remove('bg-gray-900');
+            }
+        });
+    </script>
+</body>
+</html>
